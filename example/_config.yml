@@ -1,0 +1,24 @@
+# jekyll-category-pages example project configuration
+
+# Site settings
+title: jekyll-category-pages Example
+email: Wolfram.Schroers@tamanguu.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Example project to demonstrate the jekyll-category-pages plugin.
+  Please consult the README at https://rubygems.org/gems/jekyll-category-pages
+  for further information.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Configure the plugin here
+# category_path: "jekyll/category" # <- default value
+# category_layout: "category_index.html" # <- default value
+paginate: 2 # <- turn on pagination with two posts per page
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+    - jekyll-paginate
+    - jekyll-category-pages
+
