@@ -52,3 +52,7 @@ build-iPhoneSimulator/
 # Use to ignore RubyMine metadata
 /.idea
 
+# Ignore Jekyll caches and artifacts
+_site
+.sass-cache
+.jekyll-metadata
