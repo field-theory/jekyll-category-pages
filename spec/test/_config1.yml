@@ -1,0 +1,15 @@
+# jekyll-category-pages test project configuration 1
+
+title: Test configuration 1
+email: Wolfram.Schroers@tamanguu.com
+description: Test configuration 1, no pagination
+baseurl: ""
+url: ""
+markdown: kramdown
+theme: minima
+plugins:
+    - jekyll-paginate
+    - jekyll-category-pages
+
+destination: _site1
+

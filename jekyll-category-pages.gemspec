@@ -30,4 +30,6 @@ EOF
 
   spec.add_dependency "jekyll", "~> 3.5"
   spec.add_dependency "jekyll-paginate", "~> 1.1", ">= 1.0.0"
+
+  spec.add_development_dependency "rspec", "~> 3.0"
 end

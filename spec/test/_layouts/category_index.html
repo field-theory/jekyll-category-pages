@@ -1,0 +1,16 @@
+---
+layout: basic
+---
+$page_title = '{{ page.title }}'
+$page_category = '{{ page.category }}'
+$page_total_posts = {{ page.total_posts }}
+$page_posts_title = [ {% for post in page.posts %}"{{ post.title }}", {% endfor %}]
+{% if page.paginator %}{% assign paginator = page.paginator %}$page_paginator_total_posts = {{ paginator.total_posts }}
+$page_paginator_page = {{ paginator.page }}
+$page_paginator_per_page = {{ paginator.per_page }}
+$page_paginator_total_pages = {{ paginator.total_pages }}
+$page_paginator_previous_page = {% if paginator.previous_page %}{{ paginator.previous_page }}{% else %}nil{% endif %}
+$page_paginator_next_page = {% if paginator.next_page %}{{ paginator.next_page }}{% else %}nil{% endif %}
+$page_paginator_previous_page_path = '{{ paginator.previous_page_path }}'
+$page_paginator_next_page_path = '{{ paginator.next_page_path }}'
+$page_paginator_posts_title = [ {% for post in paginator.posts limit:paginator.per_page %}"{{ post.title }}", {% endfor %}]{% endif %}

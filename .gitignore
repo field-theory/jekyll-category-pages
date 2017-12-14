@@ -53,6 +53,6 @@ build-iPhoneSimulator/
 /.idea
 
 # Ignore Jekyll caches and artifacts
-_site
+_site*
 .sass-cache
 .jekyll-metadata
