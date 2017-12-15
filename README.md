@@ -1,6 +1,7 @@
 Â# jekyll-category-pages
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-category-pages.svg)](https://rubygems.org/gems/jekyll-category-pages)
+[![Build Status](https://travis-ci.org/field-theory/jekyll-category-pages.png?branch=master)](https://travis-ci.org/field-theory/jekyll-category-pages)
 
 This plugin adds category index pages with and without pagination.  
 Benefits are:
