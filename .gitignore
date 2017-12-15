@@ -49,6 +49,9 @@ build-iPhoneSimulator/
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 
+# Ignore specific Gemfile configuration
+Gemfile.lock
+
 # Use to ignore RubyMine metadata
 /.idea
 
