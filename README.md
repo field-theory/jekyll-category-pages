@@ -1,4 +1,4 @@
-Â# jekyll-category-pages
+# jekyll-category-pages
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-category-pages.svg)](https://rubygems.org/gems/jekyll-category-pages)
 [![Build Status](https://travis-ci.org/field-theory/jekyll-category-pages.png?branch=master)](https://travis-ci.org/field-theory/jekyll-category-pages)
@@ -181,3 +181,4 @@ run.
 
 The gem is available as open source under the terms of the [MIT
 License](https://github.com/field-theory/jekyll-category-pages/blob/master/LICENSE).
+
