@@ -13,13 +13,13 @@ end
 
 # Run Jekyll in the example directory
 task :example => [:install] do
-  sh "pushd example && bundle exec jekyll build && popd"
+  sh "cd example; bundle exec jekyll build"
 end
 
 # Run all tests
 task :test => [:install] do
-  sh "pushd spec/test && bundle exec jekyll build --config _config1.yml && popd"
-  sh "pushd spec/test && bundle exec jekyll build --config _config2.yml && popd"
+  sh "cd spec/test; bundle exec jekyll build --config _config1.yml"
+  sh "cd spec/test; bundle exec jekyll build --config _config2.yml"
   sh "bundle exec rspec"
 end
 
