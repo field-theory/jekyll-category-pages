@@ -25,8 +25,7 @@ end
 
 # Clean up all transient files
 task :clean do
-  sh "bundle clean"
-  sh "rm -r Gemfile.lock example/_site example/.sass_cache spec/test/_site1 spec/test/_site2"
+  sh "rm -rf Gemfile.lock example/_site example/.sass_cache spec/test/_site1 spec/test/_site2"
 end
 
 # Private helpers
