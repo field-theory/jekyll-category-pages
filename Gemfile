@@ -6,6 +6,7 @@ source "https://rubygems.org"
 gemspec
 
 group :example do
+  gem "rake"
   gem "jekyll", ">= 3.5"
   gem "minima", "~> 2.0"
 
