@@ -39,8 +39,8 @@ page for the `Category Pages Plugin` category.
 Note that the YAML `categories` entry should always use brackets `[]`
 to make it explicit that it is an array!
 
-You can find this example in the `example` directory of the [git
-repository](https://github.com/field-theory/jekyll-category-pages).
+You can find this example in the `example` directory of the
+[git repository](https://github.com/field-theory/jekyll-category-pages).
 
 ### The example project
 
@@ -147,6 +147,21 @@ characters in category names.
 
 An example listing can be found in `example/index.html` which
 shows a full listing of categories with corresponding links.
+
+### Categories on a single page
+
+Listing the categories in a single page is particularly simple since
+the categories listed in the YAML front matter are directly available
+as strings in `page.categories`.  However, unlike the site-wide
+category list in `site.categories` the content of `page.categories`
+are just strings and can thus be added as follows (with references):
+```html
+<ul>
+{% for category in page.categories %}
+<li><a href="{{ site.url }}/path-to-category-index/{{ category | url_encode }}/index.html">{{ category }}</a></li>
+{% endfor %}
+</ul>
+```
 
 ## Development
 
