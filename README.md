@@ -39,8 +39,8 @@ page for the `Category Pages Plugin` category.
 Note that the YAML `categories` entry should always use brackets `[]`
 to make it explicit that it is an array!
 
-You can find this example in the `example` directory of the [git
-repository](https://github.com/field-theory/jekyll-category-pages).
+You can find this example in the `example` directory of the
+[git repository](https://github.com/field-theory/jekyll-category-pages).
 
 ### The example project
 
@@ -56,14 +56,9 @@ The result is put in `example/_site`.
 ## Installation and setup
 
 Installation is straightforward (like other plugins):
-1. Add the plugin to the site's `Gemfile` and configuration file:
-    ```ruby
-    group :jekyll_plugins do
-      gem "jekyll-category-pages"
-    end
-    ```
-    and run `bundle install`. If you want to use pagination, also
-    install the `jekyll-paginate` gem:
+1. Add the plugin to the site's `Gemfile` and configuration file and
+   also install the `jekyll-paginate` gem (the latter is a required
+   dependency even if you don't use it):
     ```ruby
     group :jekyll_plugins do
       gem "jekyll-paginate"
@@ -152,6 +147,21 @@ characters in category names.
 
 An example listing can be found in `example/index.html` which
 shows a full listing of categories with corresponding links.
+
+### Categories on a single page
+
+Listing the categories in a single page is particularly simple since
+the categories listed in the YAML front matter are directly available
+as strings in `page.categories`.  However, unlike the site-wide
+category list in `site.categories` the content of `page.categories`
+are just strings and can thus be added as follows (with references):
+```html
+<ul>
+{% for category in page.categories %}
+<li><a href="{{ site.url }}/path-to-category-index/{{ category | url_encode }}/index.html">{{ category }}</a></li>
+{% endfor %}
+</ul>
+```
 
 ## Development
 
