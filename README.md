@@ -56,14 +56,9 @@ The result is put in `example/_site`.
 ## Installation and setup
 
 Installation is straightforward (like other plugins):
-1. Add the plugin to the site's `Gemfile` and configuration file:
-    ```ruby
-    group :jekyll_plugins do
-      gem "jekyll-category-pages"
-    end
-    ```
-    and run `bundle install`. If you want to use pagination, also
-    install the `jekyll-paginate` gem:
+1. Add the plugin to the site's `Gemfile` and configuration file and
+   also install the `jekyll-paginate` gem (the latter is a required
+   dependency even if you don't use it):
     ```ruby
     group :jekyll_plugins do
       gem "jekyll-paginate"
