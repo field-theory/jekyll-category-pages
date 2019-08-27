@@ -69,7 +69,7 @@ module Jekyll
         # Generate the pages
         for category in categories
           posts_in_category = site.categories[category]
-          category_path = File.join(category_base_path, CGI.escape(category))
+          category_path = File.join(category_base_path, Utils.slugify(category))
           per_page = site.config['paginate']
 
           page_number = CategoryPager.calculate_pages(posts_in_category, per_page)
@@ -113,7 +113,7 @@ module Jekyll
         # Generate the pages
         for category in categories
           posts_in_category = site.categories[category]
-          category_path = File.join(category_base_path, CGI.escape(category))
+          category_path = File.join(category_base_path, Utils.slugify(category))
 
           site.pages << CategoryIndexPage.new(site, category_path, INDEXFILE, category, category_layout, posts_in_category, false)
         end

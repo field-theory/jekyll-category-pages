@@ -6,8 +6,8 @@ require 'jekyll-category-pages'
 
 basedir = 'spec/test/_site1/category/'
 jekyll = basedir + 'jekyll/'
-haodezhuyi = basedir + '%E5%A5%BD%E7%9A%84%E4%B8%BB%E6%84%8F/'
-plugin = basedir + 'Category+Pages+Plugin/'
+haodezhuyi = basedir + '好的主意/'
+plugin = basedir + 'category-pages-plugin/'
 index = 'index.html'
 
 describe Jekyll::CategoryPages do

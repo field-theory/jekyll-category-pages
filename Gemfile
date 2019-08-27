@@ -7,7 +7,7 @@ gemspec
 
 group :example do
   gem "rake"
-  gem "jekyll", ">= 3.5"
+  gem "jekyll", ">= 4.0"
   gem "minima", "~> 2.0"
 
   group :jekyll_plugins do
