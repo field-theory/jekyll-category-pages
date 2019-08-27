@@ -7,13 +7,13 @@
 # Add category index pages with and without pagination.
 #
 # (c) since 2017 by Tamanguu GmbH & Co KG
-# Written by Dr. Wolfram Schroers <Wolfram.Schroers -at- tamanguu.com>
+# Written by Dr. Wolfram Schroers <Wolfram.Schroers -at- nua-schroers.de>
 #
 # See the accompanying file LICENSE for licensing conditions.
 #
 
 module Jekyll
   module CategoryPages
-    VERSION = "1.0.1".freeze
+    VERSION = "1.1.0".freeze
   end
 end
