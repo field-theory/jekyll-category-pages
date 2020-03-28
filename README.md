@@ -70,9 +70,15 @@ Installation is straightforward (like other plugins):
     plugins:
       - jekyll-category-pages
     ```
-3. Configure any other options you need (see below).
-4. Add template for category pages (see below).
-5. Set appropriate `categories` tags on each blog post YAML front
+3. This step is optional, but recommended: Also add this line to
+   `_config.yml` which excludes categories from file URLs (they are
+   ugly and don't work properly in Jekyll, anyways):
+   ```ruby
+   permalink: /:year/:month/:day/:title:output_ext
+   ```
+4. Configure any other options you need (see below).
+5. Add template for category pages (see below).
+6. Set appropriate `categories` tags on each blog post YAML front
    matter.
 
 ### Configuration

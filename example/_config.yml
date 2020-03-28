@@ -18,6 +18,7 @@ paginate: 2 # <- turn on pagination with two posts per page
 # Build settings
 markdown: kramdown
 theme: minima
+permalink: /:year/:month/:day/:title:output_ext
 plugins:
     - jekyll-paginate
     - jekyll-category-pages
