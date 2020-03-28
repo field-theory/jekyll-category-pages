@@ -5,6 +5,7 @@ $page_title = '{{ page.title }}'
 $page_category = '{{ page.category }}'
 $page_total_posts = {{ page.total_posts }}
 $page_posts_title = [ {% for post in page.posts %}"{{ post.title }}", {% endfor %}]
+$page_posts_url = [ {% for post in page.posts %}"{{ post.url }}", {% endfor %}]
 {% if page.paginator %}{% assign paginator = page.paginator %}$page_paginator_total_posts = {{ paginator.total_posts }}
 $page_paginator_page = {{ paginator.page }}
 $page_paginator_per_page = {{ paginator.per_page }}
