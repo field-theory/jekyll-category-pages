@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-# Copyright: Since 2017 Tamanguu GmbH & Co KG - MIT License
+# Copyright: Since 2017 Wolfram Schroers - MIT License
 # Encoding: utf-8
 
 source "https://rubygems.org"
