@@ -1,5 +1,5 @@
 # Frozen-string-literal: true
-# Copyright: Since 2017 Tamanguu GmbH & Co KG - MIT License
+# Copyright: Since 2017 Wolfram Schroers - MIT License
 # Encoding: utf-8
 
 # Public tasks

@@ -2,7 +2,7 @@
 
 # Site settings
 title: jekyll-category-pages Example
-email: Wolfram.Schroers@tamanguu.com
+email: Wolfram.Schroers@field-theory.org
 description: >- # this means to ignore newlines until "baseurl:"
   Example project to demonstrate the jekyll-category-pages plugin.
   Please consult the README at https://rubygems.org/gems/jekyll-category-pages
@@ -18,6 +18,7 @@ paginate: 2 # <- turn on pagination with two posts per page
 # Build settings
 markdown: kramdown
 theme: minima
+permalink: /:year/:month/:day/:title:output_ext
 plugins:
     - jekyll-paginate
     - jekyll-category-pages

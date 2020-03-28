@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-# Copyright: Since 2017 Tamanguu GmbH & Co KG - MIT License
+# Copyright: Since 2017 Wolfram Schroers - MIT License
 # Encoding: utf-8
 
 lib = File.expand_path("lib", __dir__)
@@ -18,8 +18,8 @@ Please refer to the README.md file on the project homepage at
 https://github.com/field-theory/jekyll-category-pages
 EOF
   spec.version = Jekyll::CategoryPages::VERSION
-  spec.authors = ["Dr. Wolfram Schroers", "Tamanguu GmbH & Co KG"]
-  spec.email = "Wolfram.Schroers@tamanguu.com"
+  spec.authors = ["Dr. Wolfram Schroers"]
+  spec.email = "Wolfram.Schroers@field-theory.org"
   spec.homepage = "https://github.com/field-theory/jekyll-category-pages"
   spec.licenses = ["MIT"]
 
