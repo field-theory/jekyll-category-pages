@@ -193,8 +193,16 @@ bundle exec rake build
 The result is put in the current directory after all tests have been
 run.
 
+## Gotchas
+
+The following issues and limitations are known:
+* Jekyll currently does not properly escape special HTML entities
+  (like `&` or `<`) in permalink paths. Because of that you cannot use
+  them in category names. If you still want to use them you need to
+  adjust the `permalink` path as shown above -- it must not contain
+  category names.
+
 ## License
 
 The gem is available as open source under the terms of the [MIT
 License](https://github.com/field-theory/jekyll-category-pages/blob/master/LICENSE).
-
