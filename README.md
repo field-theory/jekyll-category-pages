@@ -7,7 +7,7 @@ This plugin adds category index pages with and without pagination.
 Benefits are:
 * Easy to setup and use, fully compatible with the default [pagination
     plugin](https://github.com/jekyll/jekyll-paginate) (also cf. the
-    [official documenation](https://jekyllrb.com/docs/pagination/)).
+    [official documentation](https://jekyllrb.com/docs/pagination/)).
 * Supports category keys with spaces and other special characters.
 * Complete documentation and a usage example.
 * Test coverage of key features.
