@@ -153,7 +153,7 @@ module Jekyll
     # use_paginator     - Whether a CategoryPager object shall be instantiated as 'paginator'.
     def initialize(site, dir, page_name, category, category_layout, posts_in_category, use_paginator)
       @site = site
-      @base = site.source
+      @base = site.theme ? site.theme.root : site.source
       super(@site, @base, '', category_layout)
       @dir = dir
       @name = page_name
