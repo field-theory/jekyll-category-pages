@@ -154,6 +154,11 @@ module Jekyll
     def initialize(site, dir, page_name, category, category_layout, posts_in_category, use_paginator)
       @site = site
       @base = site.source
+      if ! File.exist?(File.join(@base, category_layout)) && 
+        ( site.theme && File.exist?(File.join(site.theme.root, category_layout)) )
+          @base = site.theme.root
+      end
+      
       super(@site, @base, '', category_layout)
       @dir = dir
       @name = page_name
